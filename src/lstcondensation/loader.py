@@ -6,7 +6,7 @@ default_data_module = TrackingDataModule(
             "/scratch/gpfs/IOJALVO/gnn-tracking/object_condensation/lst_data_v0/processed/"
         ],
         stop=150,
-        max_sample_size=800,
+        # sample_size=800,
     ),
     val=dict(
         dirs=[
