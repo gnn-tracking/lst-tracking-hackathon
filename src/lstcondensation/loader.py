@@ -15,6 +15,13 @@ default_data_module = TrackingDataModule(
         start=150,
         stop=155,
     ),
+    test=dict(
+        dirs=[
+            "/scratch/gpfs/IOJALVO/gnn-tracking/object_condensation/lst_data_v0/processed/"
+        ],
+        start=170,
+        stop=175,
+    ),
     cpus=3,
     # could also configure a 'test' set here
 )
