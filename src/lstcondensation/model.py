@@ -1,4 +1,3 @@
-from gnn_tracking.models.edge_classifier import ECFromChkpt
 from gnn_tracking.models.resin import ResIN
 from gnn_tracking.models.track_condensation_networks import ModularGraphTCN
 from pytorch_lightning.core.mixins import HyperparametersMixin
@@ -18,7 +17,7 @@ class LSGraphTCN(nn.Module, HyperparametersMixin):
         hidden_dim=40,
         L_hc=3,
         alpha_hc: float = 0.5,
-        ec: ECFromChkpt | None = None,
+        ec: nn.Module | None = None,
         ec_thld: float = 0.5,
     ):
         super().__init__()
